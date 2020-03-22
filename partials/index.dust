@@ -5,11 +5,9 @@
 
     <div class="main-content">
         {#Page}
-        <div class="main-content__hero">
-            <h1>{post_title}</h1>
-            <div >
-                {@content /}
-            </div>
+        <h1>{post_title}</h1>
+        <div >
+            {@content /}
         </div>
         {/Page}
     </div>
