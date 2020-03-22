@@ -1,1 +1,1 @@
-# Event calendar starter theme basen on DustPress
+# Event calendar starter theme demo based on DustPress
