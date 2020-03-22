@@ -22,12 +22,12 @@ p {
 
 .list-item {
     @apply mb-1;
-	a {
-		@apply block;
-		@apply text-green-600;
-	}
+    a {
+        @apply block;
+        @apply text-green-600;
+    }
 }
 
 .list-item a:hover {
-	@apply underline;
+    @apply underline;
 }
