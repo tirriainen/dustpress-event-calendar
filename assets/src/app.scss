@@ -1,0 +1,33 @@
+@charset 'UTF-8';
+
+@import "tailwindcss/base";
+
+// Overwrite Tailwind normalizing styles
+h1 {
+    @apply text-2xl;
+    @apply my-4;
+}
+
+p {
+    @apply mb-2;
+}
+
+// continue with the rest of Tailwind components and utilities
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.current-menu-item {
+    @apply text-green-600;
+}
+
+.list-item {
+    @apply mb-1;
+	a {
+		@apply block;
+		@apply text-green-600;
+	}
+}
+
+.list-item a:hover {
+	@apply underline;
+}

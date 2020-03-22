@@ -1,0 +1,39 @@
+<!doctype html>
+<html {WP.LanguageAttributes}>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{WP.name}</title>
+
+    {@wphead /}
+</head>
+
+<body class="{#WP.body_class}{.}{@sep} {/sep}{/WP.body_class}">
+
+<nav class="bg-white shadow" role="navigation">
+    <div class="container mx-auto p-4 flex flex-wrap items-center md:flex-no-wrap">
+        <div class="mr-4 w-1/2 md:mr-8">
+            <a href="{WP.url}" rel="home">
+                <svg class="h-8 w-8 -mt-2 inline-block md:mr-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                    <path style="fill:currentColor;fill-opacity:1;stroke:none" d="M 6 3 C 6 3 5 2.99997 5 4 L 3 4 L 3 7 L 3 18 L 3 19 L 19 19 L 19 18 L 19 7 L 19 4 L 17 4 C 17 2.99997 16 3 16 3 L 13 3 C 13 3 12 2.99997 12 4 L 10 4 C 10 2.99997 9 3 9 3 L 6 3 z M 6 4 L 9 4 L 9 5 L 6 5 L 6 4 z M 13 4 L 16 4 L 16 5 L 13 5 L 13 4 z M 4 7 L 18 7 L 18 18 L 4 18 L 4 7 z M 6 8 L 6 10 L 8 10 L 8 8 L 6 8 z M 10 8 L 10 10 L 12 10 L 12 8 L 10 8 z M 14 8 L 14 10 L 16 10 L 16 8 L 14 8 z M 6 11 L 6 13 L 8 13 L 8 11 L 6 11 z M 10 11 L 10 13 L 12 13 L 12 11 L 10 11 z M 14 11 L 14 13 L 16 13 L 16 11 L 14 11 z M 14 14 L 14 16 L 16 16 L 16 14 L 14 14 z "></path>
+                </svg>
+                Event Calendar
+            </a>
+        </div>
+        <div class="ml-auto md:hidden">
+            <button id="open-menu-btn" class="flex items-center px-3 py-2 border rounded" type="button">
+                <svg class="h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <title>Menu</title>
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
+                </svg>
+            </button>
+        </div>
+        <div id="menu" class="hidden w-full md:flex md:items-center">
+            {@menu menu_name="primary_navigation" ul_classes="flex flex-col mt-4 -mx-4 pt-4 border-t md:flex-row md:items-center md:mx-0 md:ml-auto md:mt-0 md:pt-0 md:border-0" show_submenu=false /}
+        </div>
+    </div>
+</nav>
+
+<main class="container my-10 mx-auto p-4 flex flex-wrap md:flex-no-wrap">

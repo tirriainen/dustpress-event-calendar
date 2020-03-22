@@ -1,0 +1,18 @@
+{>"shared/header" /}
+
+{#SingleEvent}
+
+    <div class="main-content">
+        {#Page}
+            <h1>{post_title}</h1>
+            <p class="font-bold mb-2">{@strtodate value=fields.event_start_date format="d.m.Y" /} - {@strtodate value=fields.event_end_date format="d.m.Y" /}</p>
+            {@content /}
+        {/Page}
+        <div class="flex w-full">
+            <a class="rounded border p-2 my-4 text-purple-600" href="{WP.url}">Back to events</a>
+        </div>
+    </div>
+
+{/SingleEvent}
+
+{>"shared/footer" /}

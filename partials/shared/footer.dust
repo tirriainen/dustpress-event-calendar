@@ -1,0 +1,12 @@
+    </main>{! .main-container !}
+    <div class="py-6 my-10 border-t">
+        <p class="text-center">
+            <a class="text-green-600" href="{WP.url}" rel="home">
+                Event Calendar
+            </a>
+        </p>
+    </div>
+    {@wpfooter /}
+
+</body>
+</html>

@@ -1,0 +1,3 @@
+<ul class="event-listing future-events">
+    {>"shared/post-list-item"/} 
+</ul>
