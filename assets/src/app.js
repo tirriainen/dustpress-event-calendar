@@ -1,5 +1,18 @@
 /*
  *
+ * Mobile navigation toggle
+ *
+ */
+
+let menubtn = document.getElementById('open-menu-btn');
+let menu = document.getElementById('menu');
+
+menubtn.addEventListener('click', function () {
+    menu.classList.toggle('hidden');
+});
+
+/*
+ *
  * Tabs
  *
  */
@@ -26,17 +39,4 @@ tab2btn.addEventListener('click', function () {
     
     tab1btn.classList.remove(...classes);
     tab2btn.classList.add(...classes);
-});
-
-/*
- *
- * Mobile navigation toggle
- *
- */
-
-let menubtn = document.getElementById('open-menu-btn');
-let menu = document.getElementById('menu');
-
-menubtn.addEventListener('click', function () {
-    menu.classList.toggle('hidden');
 });
